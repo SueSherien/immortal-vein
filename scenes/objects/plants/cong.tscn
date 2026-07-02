@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://4164444cwbwx"]
+
+[ext_resource type="Texture2D" uid="uid://lea55w0cocw" path="res://assets/plants/cong_icon.png" id="1_y8mvd"]
+[ext_resource type="PackedScene" uid="uid://b28j4ddb5llv1" path="res://scenes/components/collectable_component.tscn" id="2_t8i3h"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_spnqx"]
+radius = 19.235384
+
+[node name="Cong" type="Sprite2D" unique_id=1275627213]
+texture = ExtResource("1_y8mvd")
+
+[node name="CollectableComponent" parent="." unique_id=771808695 instance=ExtResource("2_t8i3h")]
+collectable_name = "cong"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CollectableComponent" unique_id=451083746]
+shape = SubResource("CircleShape2D_spnqx")
+
+[connection signal="body_entered" from="CollectableComponent" to="CollectableComponent" method="_on_body_entered"]

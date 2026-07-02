@@ -1,0 +1,892 @@
+[gd_scene format=3 uid="uid://x2smih5vca81"]
+
+[ext_resource type="Texture2D" uid="uid://du6hri5ko8blg" path="res://assets/ui/clock_ui.png" id="1_yc87g"]
+[ext_resource type="Theme" uid="uid://bpc5l2iswpn4o" path="res://ui/game/game_ui_theme.tres" id="2_d7okr"]
+[ext_resource type="Script" uid="uid://bgnfxu2c27n61" path="res://ui/game/time_ui.gd" id="2_lkn3m"]
+[ext_resource type="FontFile" uid="uid://ds6mg6n1hpb80" path="res://assets/ui/fonts/ChangBanDianSong-16.ttf" id="3_ke6fc"]
+[ext_resource type="Texture2D" uid="uid://b6pi7x3hwdk7c" path="res://assets/ui/pointer.png" id="3_lkn3m"]
+[ext_resource type="Script" uid="uid://ch65mh4g5m6lh" path="res://ui/game/bag_ui.gd" id="5_b3mny"]
+[ext_resource type="PackedScene" uid="uid://cqcb23bhpay8d" path="res://ui/slot/slot_button.tscn" id="6_2g71p"]
+[ext_resource type="PackedScene" uid="uid://t53irdbb6jyy" path="res://ui/slot/hot_slot_button.tscn" id="8_pc3ud"]
+[ext_resource type="Script" uid="uid://1xbym7dvwtv2" path="res://ui/game/hot_bar_ui.gd" id="8_yw7c2"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_m2hwu"]
+atlas = ExtResource("1_yc87g")
+region = Rect2(0, 72, 138, 97)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_yc87g"]
+atlas = ExtResource("1_yc87g")
+region = Rect2(0, 22, 20, 21)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_d7okr"]
+atlas = ExtResource("1_yc87g")
+region = Rect2(0, 44, 20, 21)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_lkn3m"]
+atlas = ExtResource("1_yc87g")
+region = Rect2(21, 0, 20, 21)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ke6fc"]
+atlas = ExtResource("1_yc87g")
+region = Rect2(21, 0, 20, 21)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2g71p"]
+atlas = ExtResource("1_yc87g")
+region = Rect2(21, 0, 20, 21)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_b3mny"]
+atlas = ExtResource("1_yc87g")
+region = Rect2(42, 22, 20, 21)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pc3ud"]
+atlas = ExtResource("1_yc87g")
+region = Rect2(42, 44, 20, 21)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_yw7c2"]
+atlas = ExtResource("1_yc87g")
+region = Rect2(21, 22, 20, 21)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7okqv"]
+atlas = ExtResource("1_yc87g")
+region = Rect2(21, 22, 20, 21)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vor7y"]
+atlas = ExtResource("1_yc87g")
+region = Rect2(21, 22, 20, 21)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_w08ax"]
+atlas = ExtResource("1_yc87g")
+region = Rect2(21, 22, 20, 21)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_b7dow"]
+atlas = ExtResource("1_yc87g")
+region = Rect2(21, 44, 20, 21)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3jxcf"]
+atlas = ExtResource("1_yc87g")
+region = Rect2(74, 59, 17, 11)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_75815"]
+atlas = ExtResource("1_yc87g")
+region = Rect2(183, 0, 41, 43)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cbo24"]
+atlas = ExtResource("1_yc87g")
+region = Rect2(183, 90, 41, 43)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hsp80"]
+atlas = ExtResource("1_yc87g")
+region = Rect2(183, 45, 41, 43)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ea8c5"]
+atlas = ExtResource("1_yc87g")
+region = Rect2(63, 60, 9, 9)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ein5l"]
+atlas = ExtResource("1_yc87g")
+region = Rect2(227, 112, 21, 21)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_yhfdy"]
+atlas = ExtResource("1_yc87g")
+region = Rect2(203, 134, 21, 36)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_70c7b"]
+atlas = ExtResource("1_yc87g")
+region = Rect2(227, 134, 21, 27)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ic07s"]
+atlas = ExtResource("1_yc87g")
+region = Rect2(227, 0, 21, 52)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_io4j5"]
+atlas = ExtResource("1_yc87g")
+region = Rect2(227, 53, 21, 58)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_58x5e"]
+atlas = ExtResource("1_yc87g")
+region = Rect2(140, 145, 20, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xejep"]
+atlas = ExtResource("1_yc87g")
+region = Rect2(140, 163, 20, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_akkmt"]
+atlas = ExtResource("1_yc87g")
+region = Rect2(162, 145, 20, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5bd6d"]
+atlas = ExtResource("1_yc87g")
+region = Rect2(140, 103, 13, 13)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_j3uwy"]
+atlas = ExtResource("1_yc87g")
+region = Rect2(168, 103, 13, 13)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xfr31"]
+atlas = ExtResource("1_yc87g")
+region = Rect2(154, 103, 13, 13)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_laays"]
+atlas = ExtResource("1_yc87g")
+region = Rect2(140, 89, 13, 13)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1v6rg"]
+atlas = ExtResource("1_yc87g")
+region = Rect2(168, 89, 13, 13)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7upbu"]
+atlas = ExtResource("1_yc87g")
+region = Rect2(154, 89, 13, 13)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_nnajj"]
+atlas = ExtResource("1_yc87g")
+region = Rect2(140, 75, 13, 13)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hlpak"]
+atlas = ExtResource("1_yc87g")
+region = Rect2(168, 75, 13, 13)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mry7j"]
+atlas = ExtResource("1_yc87g")
+region = Rect2(154, 75, 13, 13)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_yxhq4"]
+atlas = ExtResource("1_yc87g")
+region = Rect2(67, 5, 46, 46)
+
+[node name="GameUI" type="Control" unique_id=155868875]
+layout_mode = 3
+anchors_preset = 0
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1813738003]
+
+[node name="TimeDataUI" type="Control" parent="CanvasLayer" unique_id=478024979]
+layout_mode = 3
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -5.0
+offset_top = 5.0
+offset_right = -5.0
+offset_bottom = 5.0
+grow_horizontal = 0
+size_flags_horizontal = 4
+
+[node name="TimePanel" type="TextureRect" parent="CanvasLayer/TimeDataUI" unique_id=1739544168]
+layout_mode = 0
+offset_left = -138.0
+offset_bottom = 97.0
+texture = SubResource("AtlasTexture_m2hwu")
+
+[node name="TimeUI" type="Control" parent="CanvasLayer/TimeDataUI" unique_id=1142843102]
+anchors_preset = 0
+script = ExtResource("2_lkn3m")
+
+[node name="HourContainer" type="Control" parent="CanvasLayer/TimeDataUI/TimeUI" unique_id=460203773]
+clip_contents = true
+anchors_preset = 0
+offset_left = -133.0
+offset_top = 5.0
+offset_right = -113.0
+offset_bottom = 68.0
+
+[node name="AllHours" type="VBoxContainer" parent="CanvasLayer/TimeDataUI/TimeUI/HourContainer" unique_id=80686468]
+layout_mode = 0
+offset_right = 20.0
+offset_bottom = 296.0
+theme_override_constants/separation = 0
+
+[node name="0" type="TextureRect" parent="CanvasLayer/TimeDataUI/TimeUI/HourContainer/AllHours" unique_id=513293621]
+layout_mode = 2
+texture = SubResource("AtlasTexture_yc87g")
+
+[node name="Label" type="Label" parent="CanvasLayer/TimeDataUI/TimeUI/HourContainer/AllHours/0" unique_id=1286310576]
+layout_mode = 0
+offset_left = 2.0
+offset_top = 2.0
+offset_right = 18.0
+offset_bottom = 19.0
+theme_override_colors/font_color = Color(0.03298035, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_ke6fc")
+text = "卯"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="1" type="TextureRect" parent="CanvasLayer/TimeDataUI/TimeUI/HourContainer/AllHours" unique_id=1234806501]
+layout_mode = 2
+texture = SubResource("AtlasTexture_d7okr")
+
+[node name="Label" type="Label" parent="CanvasLayer/TimeDataUI/TimeUI/HourContainer/AllHours/1" unique_id=1636937398]
+layout_mode = 0
+offset_left = 2.0
+offset_top = 2.0
+offset_right = 18.0
+offset_bottom = 19.0
+theme_override_colors/font_color = Color(0.03298035, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_ke6fc")
+text = "辰"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="2" type="TextureRect" parent="CanvasLayer/TimeDataUI/TimeUI/HourContainer/AllHours" unique_id=651288943]
+layout_mode = 2
+texture = SubResource("AtlasTexture_lkn3m")
+
+[node name="Label" type="Label" parent="CanvasLayer/TimeDataUI/TimeUI/HourContainer/AllHours/2" unique_id=874986603]
+layout_mode = 0
+offset_left = 2.0
+offset_top = 2.0
+offset_right = 18.0
+offset_bottom = 19.0
+theme_override_colors/font_color = Color(0.03298035, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_ke6fc")
+text = "巳"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="3" type="TextureRect" parent="CanvasLayer/TimeDataUI/TimeUI/HourContainer/AllHours" unique_id=736676503]
+layout_mode = 2
+texture = SubResource("AtlasTexture_ke6fc")
+
+[node name="Label" type="Label" parent="CanvasLayer/TimeDataUI/TimeUI/HourContainer/AllHours/3" unique_id=1568922691]
+layout_mode = 0
+offset_left = 2.0
+offset_top = 2.0
+offset_right = 18.0
+offset_bottom = 19.0
+theme_override_colors/font_color = Color(0.03298035, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_ke6fc")
+text = "午"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="4" type="TextureRect" parent="CanvasLayer/TimeDataUI/TimeUI/HourContainer/AllHours" unique_id=2075471647]
+layout_mode = 2
+texture = SubResource("AtlasTexture_2g71p")
+
+[node name="Label" type="Label" parent="CanvasLayer/TimeDataUI/TimeUI/HourContainer/AllHours/4" unique_id=975422218]
+layout_mode = 0
+offset_left = 2.0
+offset_top = 2.0
+offset_right = 18.0
+offset_bottom = 19.0
+theme_override_colors/font_color = Color(0.03298035, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_ke6fc")
+text = "未"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="5" type="TextureRect" parent="CanvasLayer/TimeDataUI/TimeUI/HourContainer/AllHours" unique_id=866353049]
+layout_mode = 2
+texture = SubResource("AtlasTexture_b3mny")
+
+[node name="Label" type="Label" parent="CanvasLayer/TimeDataUI/TimeUI/HourContainer/AllHours/5" unique_id=1140526498]
+layout_mode = 0
+offset_left = 2.0
+offset_top = 2.0
+offset_right = 18.0
+offset_bottom = 19.0
+theme_override_colors/font_color = Color(0.03298035, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_ke6fc")
+text = "申"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="6" type="TextureRect" parent="CanvasLayer/TimeDataUI/TimeUI/HourContainer/AllHours" unique_id=467773804]
+layout_mode = 2
+texture = SubResource("AtlasTexture_pc3ud")
+
+[node name="Label" type="Label" parent="CanvasLayer/TimeDataUI/TimeUI/HourContainer/AllHours/6" unique_id=16150146]
+layout_mode = 0
+offset_left = 2.0
+offset_top = 2.0
+offset_right = 18.0
+offset_bottom = 19.0
+theme_override_colors/font_color = Color(0.03298035, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_ke6fc")
+text = "酉"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="7" type="TextureRect" parent="CanvasLayer/TimeDataUI/TimeUI/HourContainer/AllHours" unique_id=2028386392]
+layout_mode = 2
+texture = SubResource("AtlasTexture_yw7c2")
+
+[node name="Label" type="Label" parent="CanvasLayer/TimeDataUI/TimeUI/HourContainer/AllHours/7" unique_id=1725377679]
+layout_mode = 0
+offset_left = 2.0
+offset_top = 2.0
+offset_right = 18.0
+offset_bottom = 19.0
+theme_override_colors/font_color = Color(0.03298035, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_ke6fc")
+text = "戌"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="8" type="TextureRect" parent="CanvasLayer/TimeDataUI/TimeUI/HourContainer/AllHours" unique_id=1074417269]
+layout_mode = 2
+texture = SubResource("AtlasTexture_7okqv")
+
+[node name="Label" type="Label" parent="CanvasLayer/TimeDataUI/TimeUI/HourContainer/AllHours/8" unique_id=273119413]
+layout_mode = 0
+offset_left = 2.0
+offset_top = 2.0
+offset_right = 18.0
+offset_bottom = 19.0
+theme_override_colors/font_color = Color(0.03298035, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_ke6fc")
+text = "亥"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="9" type="TextureRect" parent="CanvasLayer/TimeDataUI/TimeUI/HourContainer/AllHours" unique_id=1428115850]
+layout_mode = 2
+texture = SubResource("AtlasTexture_vor7y")
+
+[node name="Label" type="Label" parent="CanvasLayer/TimeDataUI/TimeUI/HourContainer/AllHours/9" unique_id=495505632]
+layout_mode = 0
+offset_left = 2.0
+offset_top = 2.0
+offset_right = 18.0
+offset_bottom = 19.0
+theme_override_colors/font_color = Color(0.03298035, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_ke6fc")
+text = "子"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="10" type="TextureRect" parent="CanvasLayer/TimeDataUI/TimeUI/HourContainer/AllHours" unique_id=203041039]
+layout_mode = 2
+texture = SubResource("AtlasTexture_w08ax")
+
+[node name="Label" type="Label" parent="CanvasLayer/TimeDataUI/TimeUI/HourContainer/AllHours/10" unique_id=1112133192]
+layout_mode = 0
+offset_left = 2.0
+offset_top = 2.0
+offset_right = 18.0
+offset_bottom = 19.0
+theme_override_colors/font_color = Color(0.03298035, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_ke6fc")
+text = "丑"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="11" type="TextureRect" parent="CanvasLayer/TimeDataUI/TimeUI/HourContainer/AllHours" unique_id=1567878474]
+layout_mode = 2
+texture = SubResource("AtlasTexture_b7dow")
+
+[node name="Label" type="Label" parent="CanvasLayer/TimeDataUI/TimeUI/HourContainer/AllHours/11" unique_id=428335673]
+layout_mode = 0
+offset_left = 2.0
+offset_top = 2.0
+offset_right = 18.0
+offset_bottom = 19.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("3_ke6fc")
+text = "寅"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="12" type="TextureRect" parent="CanvasLayer/TimeDataUI/TimeUI/HourContainer/AllHours" unique_id=402916788]
+layout_mode = 2
+texture = SubResource("AtlasTexture_yc87g")
+
+[node name="Label" type="Label" parent="CanvasLayer/TimeDataUI/TimeUI/HourContainer/AllHours/12" unique_id=20944173]
+layout_mode = 0
+offset_left = 2.0
+offset_top = 2.0
+offset_right = 18.0
+offset_bottom = 19.0
+theme_override_colors/font_color = Color(0.03298035, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_ke6fc")
+text = "卯"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="13" type="TextureRect" parent="CanvasLayer/TimeDataUI/TimeUI/HourContainer/AllHours" unique_id=870924451]
+layout_mode = 2
+texture = SubResource("AtlasTexture_d7okr")
+
+[node name="Label" type="Label" parent="CanvasLayer/TimeDataUI/TimeUI/HourContainer/AllHours/13" unique_id=2053765299]
+layout_mode = 0
+offset_left = 2.0
+offset_top = 2.0
+offset_right = 18.0
+offset_bottom = 19.0
+theme_override_colors/font_color = Color(0.03298035, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_ke6fc")
+text = "辰"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="DialPointer" type="TextureRect" parent="CanvasLayer/TimeDataUI/TimeUI" unique_id=237946315]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -110.0
+offset_top = 5.0
+offset_right = -47.0
+offset_bottom = 68.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.99999946, 1)
+pivot_offset = Vector2(31.5, 31.5)
+texture = ExtResource("3_lkn3m")
+
+[node name="Arrow" type="TextureRect" parent="CanvasLayer/TimeDataUI/TimeUI" unique_id=1203680144]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -114.0
+offset_top = 7.0
+offset_right = -97.0
+offset_bottom = 18.0
+grow_horizontal = 0
+texture = SubResource("AtlasTexture_3jxcf")
+
+[node name="DateButton" type="TextureButton" parent="CanvasLayer/TimeDataUI/TimeUI" unique_id=1318820859]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -45.0
+offset_top = 26.0
+offset_right = -4.0
+offset_bottom = 69.0
+grow_horizontal = 0
+texture_normal = SubResource("AtlasTexture_75815")
+texture_pressed = SubResource("AtlasTexture_cbo24")
+texture_hover = SubResource("AtlasTexture_hsp80")
+
+[node name="Date" type="Label" parent="CanvasLayer/TimeDataUI/TimeUI/DateButton" unique_id=675232492]
+layout_mode = 1
+offset_left = 5.0
+offset_top = 3.0
+offset_right = 36.0
+offset_bottom = 20.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/line_spacing = 0
+theme_override_fonts/font = ExtResource("3_ke6fc")
+
+[node name="Day" type="HBoxContainer" parent="CanvasLayer/TimeDataUI/TimeUI" unique_id=2136185968]
+layout_mode = 0
+offset_left = -44.0
+offset_top = 15.0
+offset_right = 30.0
+offset_bottom = 24.0
+theme_override_constants/separation = 1
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer/TimeDataUI/TimeUI/Day" unique_id=2147074189]
+layout_mode = 2
+texture = SubResource("AtlasTexture_ea8c5")
+
+[node name="TextureRect1" type="TextureRect" parent="CanvasLayer/TimeDataUI/TimeUI/Day" unique_id=1656399744]
+layout_mode = 2
+texture = SubResource("AtlasTexture_ea8c5")
+
+[node name="TextureRect2" type="TextureRect" parent="CanvasLayer/TimeDataUI/TimeUI/Day" unique_id=1314954810]
+layout_mode = 2
+texture = SubResource("AtlasTexture_ea8c5")
+
+[node name="TextureRect3" type="TextureRect" parent="CanvasLayer/TimeDataUI/TimeUI/Day" unique_id=1686974271]
+layout_mode = 2
+texture = SubResource("AtlasTexture_ea8c5")
+
+[node name="BusinessButton" type="TextureButton" parent="CanvasLayer/TimeDataUI" unique_id=2008088927]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -159.0
+offset_top = 2.0
+offset_right = -138.0
+offset_bottom = 23.0
+grow_horizontal = 0
+texture_normal = SubResource("AtlasTexture_ein5l")
+texture_pressed = SubResource("AtlasTexture_yhfdy")
+texture_hover = SubResource("AtlasTexture_70c7b")
+
+[node name="ClosedButton" type="TextureButton" parent="CanvasLayer/TimeDataUI" unique_id=2037621444]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -159.0
+offset_top = 25.0
+offset_right = -138.0
+offset_bottom = 77.0
+grow_horizontal = 0
+texture_normal = SubResource("AtlasTexture_ic07s")
+texture_pressed = SubResource("AtlasTexture_io4j5")
+
+[node name="HomepageButton" type="TextureButton" parent="CanvasLayer/TimeDataUI" unique_id=696718202]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -130.0
+offset_top = 78.0
+offset_right = -110.0
+offset_bottom = 94.0
+grow_horizontal = 0
+texture_normal = SubResource("AtlasTexture_58x5e")
+texture_pressed = SubResource("AtlasTexture_xejep")
+texture_hover = SubResource("AtlasTexture_akkmt")
+
+[node name="ControlButton" type="HBoxContainer" parent="CanvasLayer/TimeDataUI" unique_id=2138793003]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -45.0
+offset_top = 2.0
+offset_right = -4.0
+offset_bottom = 15.0
+grow_horizontal = 0
+theme_override_constants/separation = 1
+
+[node name="PauseButton" type="TextureButton" parent="CanvasLayer/TimeDataUI/ControlButton" unique_id=318183365]
+layout_mode = 2
+texture_normal = SubResource("AtlasTexture_5bd6d")
+texture_pressed = SubResource("AtlasTexture_j3uwy")
+texture_hover = SubResource("AtlasTexture_xfr31")
+
+[node name="MenuButton" type="TextureButton" parent="CanvasLayer/TimeDataUI/ControlButton" unique_id=1374347082]
+layout_mode = 2
+texture_normal = SubResource("AtlasTexture_laays")
+texture_pressed = SubResource("AtlasTexture_1v6rg")
+texture_hover = SubResource("AtlasTexture_7upbu")
+
+[node name="HideButton" type="TextureButton" parent="CanvasLayer/TimeDataUI/ControlButton" unique_id=863016027]
+layout_mode = 2
+texture_normal = SubResource("AtlasTexture_nnajj")
+texture_pressed = SubResource("AtlasTexture_hlpak")
+texture_hover = SubResource("AtlasTexture_mry7j")
+
+[node name="BagUI" type="Control" parent="CanvasLayer" unique_id=1915545407]
+layout_mode = 3
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("5_b3mny")
+
+[node name="HotBarPanel" type="PanelContainer" parent="CanvasLayer/BagUI" unique_id=2023083438]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -212.0
+offset_top = 76.0
+offset_right = 213.0
+offset_bottom = 132.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("2_d7okr")
+theme_type_variation = &"WoodBorderPanel"
+
+[node name="MarginContainer" type="MarginContainer" parent="CanvasLayer/BagUI/HotBarPanel" unique_id=877661714]
+layout_mode = 2
+
+[node name="HotSlotContainer" type="HBoxContainer" parent="CanvasLayer/BagUI/HotBarPanel/MarginContainer" unique_id=1642640371]
+layout_mode = 2
+theme_override_constants/separation = 5
+
+[node name="SlotButtonControl" parent="CanvasLayer/BagUI/HotBarPanel/MarginContainer/HotSlotContainer" unique_id=1564156477 instance=ExtResource("6_2g71p")]
+layout_mode = 2
+
+[node name="SlotButtonControl2" parent="CanvasLayer/BagUI/HotBarPanel/MarginContainer/HotSlotContainer" unique_id=879631888 instance=ExtResource("6_2g71p")]
+layout_mode = 2
+
+[node name="SlotButtonControl3" parent="CanvasLayer/BagUI/HotBarPanel/MarginContainer/HotSlotContainer" unique_id=830701480 instance=ExtResource("6_2g71p")]
+layout_mode = 2
+
+[node name="SlotButtonControl4" parent="CanvasLayer/BagUI/HotBarPanel/MarginContainer/HotSlotContainer" unique_id=21899349 instance=ExtResource("6_2g71p")]
+layout_mode = 2
+
+[node name="SlotButtonControl5" parent="CanvasLayer/BagUI/HotBarPanel/MarginContainer/HotSlotContainer" unique_id=1798836559 instance=ExtResource("6_2g71p")]
+layout_mode = 2
+
+[node name="SlotButtonControl6" parent="CanvasLayer/BagUI/HotBarPanel/MarginContainer/HotSlotContainer" unique_id=763675537 instance=ExtResource("6_2g71p")]
+layout_mode = 2
+
+[node name="SlotButtonControl7" parent="CanvasLayer/BagUI/HotBarPanel/MarginContainer/HotSlotContainer" unique_id=2104614251 instance=ExtResource("6_2g71p")]
+layout_mode = 2
+
+[node name="SlotButtonControl8" parent="CanvasLayer/BagUI/HotBarPanel/MarginContainer/HotSlotContainer" unique_id=1885312019 instance=ExtResource("6_2g71p")]
+layout_mode = 2
+
+[node name="SlotButtonControl9" parent="CanvasLayer/BagUI/HotBarPanel/MarginContainer/HotSlotContainer" unique_id=668371716 instance=ExtResource("6_2g71p")]
+layout_mode = 2
+
+[node name="SlotButtonControl10" parent="CanvasLayer/BagUI/HotBarPanel/MarginContainer/HotSlotContainer" unique_id=2116459598 instance=ExtResource("6_2g71p")]
+layout_mode = 2
+
+[node name="BagPanel" type="PanelContainer" parent="CanvasLayer/BagUI" unique_id=1929022455]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -212.0
+offset_top = -144.0
+offset_right = 213.0
+offset_bottom = 76.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("2_d7okr")
+theme_type_variation = &"WoodBorderPanel"
+
+[node name="MarginContainer" type="MarginContainer" parent="CanvasLayer/BagUI/BagPanel" unique_id=1769967949]
+layout_mode = 2
+
+[node name="BagSlotContainer" type="GridContainer" parent="CanvasLayer/BagUI/BagPanel/MarginContainer" unique_id=1814628442]
+layout_mode = 2
+theme_override_constants/h_separation = 5
+theme_override_constants/v_separation = 5
+columns = 10
+
+[node name="SlotButtonControl" parent="CanvasLayer/BagUI/BagPanel/MarginContainer/BagSlotContainer" unique_id=517512160 instance=ExtResource("6_2g71p")]
+layout_mode = 2
+
+[node name="SlotButtonControl2" parent="CanvasLayer/BagUI/BagPanel/MarginContainer/BagSlotContainer" unique_id=743241150 instance=ExtResource("6_2g71p")]
+layout_mode = 2
+
+[node name="SlotButtonControl3" parent="CanvasLayer/BagUI/BagPanel/MarginContainer/BagSlotContainer" unique_id=86525860 instance=ExtResource("6_2g71p")]
+layout_mode = 2
+
+[node name="SlotButtonControl4" parent="CanvasLayer/BagUI/BagPanel/MarginContainer/BagSlotContainer" unique_id=1043489629 instance=ExtResource("6_2g71p")]
+layout_mode = 2
+
+[node name="SlotButtonControl5" parent="CanvasLayer/BagUI/BagPanel/MarginContainer/BagSlotContainer" unique_id=820321443 instance=ExtResource("6_2g71p")]
+layout_mode = 2
+
+[node name="SlotButtonControl6" parent="CanvasLayer/BagUI/BagPanel/MarginContainer/BagSlotContainer" unique_id=1434401396 instance=ExtResource("6_2g71p")]
+layout_mode = 2
+
+[node name="SlotButtonControl7" parent="CanvasLayer/BagUI/BagPanel/MarginContainer/BagSlotContainer" unique_id=1603595444 instance=ExtResource("6_2g71p")]
+layout_mode = 2
+
+[node name="SlotButtonControl8" parent="CanvasLayer/BagUI/BagPanel/MarginContainer/BagSlotContainer" unique_id=42265741 instance=ExtResource("6_2g71p")]
+layout_mode = 2
+
+[node name="SlotButtonControl9" parent="CanvasLayer/BagUI/BagPanel/MarginContainer/BagSlotContainer" unique_id=658371631 instance=ExtResource("6_2g71p")]
+layout_mode = 2
+
+[node name="SlotButtonControl10" parent="CanvasLayer/BagUI/BagPanel/MarginContainer/BagSlotContainer" unique_id=1541717694 instance=ExtResource("6_2g71p")]
+layout_mode = 2
+
+[node name="SlotButtonControl11" parent="CanvasLayer/BagUI/BagPanel/MarginContainer/BagSlotContainer" unique_id=1286254028 instance=ExtResource("6_2g71p")]
+layout_mode = 2
+
+[node name="SlotButtonControl12" parent="CanvasLayer/BagUI/BagPanel/MarginContainer/BagSlotContainer" unique_id=1623971057 instance=ExtResource("6_2g71p")]
+layout_mode = 2
+
+[node name="SlotButtonControl13" parent="CanvasLayer/BagUI/BagPanel/MarginContainer/BagSlotContainer" unique_id=1001004025 instance=ExtResource("6_2g71p")]
+layout_mode = 2
+
+[node name="SlotButtonControl14" parent="CanvasLayer/BagUI/BagPanel/MarginContainer/BagSlotContainer" unique_id=70575884 instance=ExtResource("6_2g71p")]
+layout_mode = 2
+
+[node name="SlotButtonControl15" parent="CanvasLayer/BagUI/BagPanel/MarginContainer/BagSlotContainer" unique_id=1413858636 instance=ExtResource("6_2g71p")]
+layout_mode = 2
+
+[node name="SlotButtonControl16" parent="CanvasLayer/BagUI/BagPanel/MarginContainer/BagSlotContainer" unique_id=1908241886 instance=ExtResource("6_2g71p")]
+layout_mode = 2
+
+[node name="SlotButtonControl17" parent="CanvasLayer/BagUI/BagPanel/MarginContainer/BagSlotContainer" unique_id=1630298439 instance=ExtResource("6_2g71p")]
+layout_mode = 2
+
+[node name="SlotButtonControl18" parent="CanvasLayer/BagUI/BagPanel/MarginContainer/BagSlotContainer" unique_id=807947780 instance=ExtResource("6_2g71p")]
+layout_mode = 2
+
+[node name="SlotButtonControl19" parent="CanvasLayer/BagUI/BagPanel/MarginContainer/BagSlotContainer" unique_id=438169054 instance=ExtResource("6_2g71p")]
+layout_mode = 2
+
+[node name="SlotButtonControl20" parent="CanvasLayer/BagUI/BagPanel/MarginContainer/BagSlotContainer" unique_id=1504238801 instance=ExtResource("6_2g71p")]
+layout_mode = 2
+
+[node name="SlotButtonControl21" parent="CanvasLayer/BagUI/BagPanel/MarginContainer/BagSlotContainer" unique_id=1219698012 instance=ExtResource("6_2g71p")]
+layout_mode = 2
+
+[node name="SlotButtonControl22" parent="CanvasLayer/BagUI/BagPanel/MarginContainer/BagSlotContainer" unique_id=1081176950 instance=ExtResource("6_2g71p")]
+layout_mode = 2
+
+[node name="SlotButtonControl23" parent="CanvasLayer/BagUI/BagPanel/MarginContainer/BagSlotContainer" unique_id=1027296464 instance=ExtResource("6_2g71p")]
+layout_mode = 2
+
+[node name="SlotButtonControl24" parent="CanvasLayer/BagUI/BagPanel/MarginContainer/BagSlotContainer" unique_id=498202123 instance=ExtResource("6_2g71p")]
+layout_mode = 2
+
+[node name="SlotButtonControl25" parent="CanvasLayer/BagUI/BagPanel/MarginContainer/BagSlotContainer" unique_id=547629060 instance=ExtResource("6_2g71p")]
+layout_mode = 2
+
+[node name="SlotButtonControl26" parent="CanvasLayer/BagUI/BagPanel/MarginContainer/BagSlotContainer" unique_id=1512151581 instance=ExtResource("6_2g71p")]
+layout_mode = 2
+
+[node name="SlotButtonControl27" parent="CanvasLayer/BagUI/BagPanel/MarginContainer/BagSlotContainer" unique_id=82030760 instance=ExtResource("6_2g71p")]
+layout_mode = 2
+
+[node name="SlotButtonControl28" parent="CanvasLayer/BagUI/BagPanel/MarginContainer/BagSlotContainer" unique_id=1786823977 instance=ExtResource("6_2g71p")]
+layout_mode = 2
+
+[node name="SlotButtonControl29" parent="CanvasLayer/BagUI/BagPanel/MarginContainer/BagSlotContainer" unique_id=836314730 instance=ExtResource("6_2g71p")]
+layout_mode = 2
+
+[node name="SlotButtonControl30" parent="CanvasLayer/BagUI/BagPanel/MarginContainer/BagSlotContainer" unique_id=570674355 instance=ExtResource("6_2g71p")]
+layout_mode = 2
+
+[node name="SlotButtonControl31" parent="CanvasLayer/BagUI/BagPanel/MarginContainer/BagSlotContainer" unique_id=1125801301 instance=ExtResource("6_2g71p")]
+layout_mode = 2
+
+[node name="SlotButtonControl32" parent="CanvasLayer/BagUI/BagPanel/MarginContainer/BagSlotContainer" unique_id=2060444740 instance=ExtResource("6_2g71p")]
+layout_mode = 2
+
+[node name="SlotButtonControl33" parent="CanvasLayer/BagUI/BagPanel/MarginContainer/BagSlotContainer" unique_id=193036601 instance=ExtResource("6_2g71p")]
+layout_mode = 2
+
+[node name="SlotButtonControl34" parent="CanvasLayer/BagUI/BagPanel/MarginContainer/BagSlotContainer" unique_id=517996110 instance=ExtResource("6_2g71p")]
+layout_mode = 2
+
+[node name="SlotButtonControl35" parent="CanvasLayer/BagUI/BagPanel/MarginContainer/BagSlotContainer" unique_id=569974159 instance=ExtResource("6_2g71p")]
+layout_mode = 2
+
+[node name="SlotButtonControl36" parent="CanvasLayer/BagUI/BagPanel/MarginContainer/BagSlotContainer" unique_id=1357193366 instance=ExtResource("6_2g71p")]
+layout_mode = 2
+
+[node name="SlotButtonControl37" parent="CanvasLayer/BagUI/BagPanel/MarginContainer/BagSlotContainer" unique_id=1752305535 instance=ExtResource("6_2g71p")]
+layout_mode = 2
+
+[node name="SlotButtonControl38" parent="CanvasLayer/BagUI/BagPanel/MarginContainer/BagSlotContainer" unique_id=496678590 instance=ExtResource("6_2g71p")]
+layout_mode = 2
+
+[node name="SlotButtonControl39" parent="CanvasLayer/BagUI/BagPanel/MarginContainer/BagSlotContainer" unique_id=957634459 instance=ExtResource("6_2g71p")]
+layout_mode = 2
+
+[node name="SlotButtonControl40" parent="CanvasLayer/BagUI/BagPanel/MarginContainer/BagSlotContainer" unique_id=2137424662 instance=ExtResource("6_2g71p")]
+layout_mode = 2
+
+[node name="SlotButtonControl41" parent="CanvasLayer/BagUI/BagPanel/MarginContainer/BagSlotContainer" unique_id=666876733 instance=ExtResource("6_2g71p")]
+layout_mode = 2
+
+[node name="SlotButtonControl42" parent="CanvasLayer/BagUI/BagPanel/MarginContainer/BagSlotContainer" unique_id=931110167 instance=ExtResource("6_2g71p")]
+layout_mode = 2
+
+[node name="SlotButtonControl43" parent="CanvasLayer/BagUI/BagPanel/MarginContainer/BagSlotContainer" unique_id=1150995005 instance=ExtResource("6_2g71p")]
+layout_mode = 2
+
+[node name="SlotButtonControl44" parent="CanvasLayer/BagUI/BagPanel/MarginContainer/BagSlotContainer" unique_id=708875522 instance=ExtResource("6_2g71p")]
+layout_mode = 2
+
+[node name="SlotButtonControl45" parent="CanvasLayer/BagUI/BagPanel/MarginContainer/BagSlotContainer" unique_id=1496109553 instance=ExtResource("6_2g71p")]
+layout_mode = 2
+
+[node name="SlotButtonControl46" parent="CanvasLayer/BagUI/BagPanel/MarginContainer/BagSlotContainer" unique_id=177912682 instance=ExtResource("6_2g71p")]
+layout_mode = 2
+
+[node name="SlotButtonControl47" parent="CanvasLayer/BagUI/BagPanel/MarginContainer/BagSlotContainer" unique_id=722596364 instance=ExtResource("6_2g71p")]
+layout_mode = 2
+
+[node name="SlotButtonControl48" parent="CanvasLayer/BagUI/BagPanel/MarginContainer/BagSlotContainer" unique_id=670460487 instance=ExtResource("6_2g71p")]
+layout_mode = 2
+
+[node name="SlotButtonControl49" parent="CanvasLayer/BagUI/BagPanel/MarginContainer/BagSlotContainer" unique_id=1005457246 instance=ExtResource("6_2g71p")]
+layout_mode = 2
+
+[node name="SlotButtonControl50" parent="CanvasLayer/BagUI/BagPanel/MarginContainer/BagSlotContainer" unique_id=927400515 instance=ExtResource("6_2g71p")]
+layout_mode = 2
+
+[node name="HotBarUI" type="Control" parent="CanvasLayer" unique_id=249667988]
+layout_mode = 3
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -212.5
+offset_top = -56.0
+offset_right = 212.5
+grow_horizontal = 2
+grow_vertical = 0
+mouse_filter = 2
+script = ExtResource("8_yw7c2")
+
+[node name="PanelContainer" type="PanelContainer" parent="CanvasLayer/HotBarUI" unique_id=637639722]
+layout_mode = 1
+offset_right = 425.0
+offset_bottom = 56.0
+mouse_filter = 2
+theme = ExtResource("2_d7okr")
+theme_type_variation = &"WoodBorderPanel"
+
+[node name="MarginContainer" type="MarginContainer" parent="CanvasLayer/HotBarUI/PanelContainer" unique_id=333047355]
+layout_mode = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="CanvasLayer/HotBarUI/PanelContainer/MarginContainer" unique_id=1760874707]
+layout_mode = 2
+theme_override_constants/separation = 5
+
+[node name="HotSlotButton" parent="CanvasLayer/HotBarUI/PanelContainer/MarginContainer/HBoxContainer" unique_id=776334358 instance=ExtResource("8_pc3ud")]
+layout_mode = 2
+theme_type_variation = &"SlotButton"
+
+[node name="HotSlotButton2" parent="CanvasLayer/HotBarUI/PanelContainer/MarginContainer/HBoxContainer" unique_id=464047096 instance=ExtResource("8_pc3ud")]
+layout_mode = 2
+theme_type_variation = &"SlotButton"
+
+[node name="HotSlotButton3" parent="CanvasLayer/HotBarUI/PanelContainer/MarginContainer/HBoxContainer" unique_id=949555051 instance=ExtResource("8_pc3ud")]
+layout_mode = 2
+theme_type_variation = &"SlotButton"
+
+[node name="HotSlotButton4" parent="CanvasLayer/HotBarUI/PanelContainer/MarginContainer/HBoxContainer" unique_id=501636560 instance=ExtResource("8_pc3ud")]
+layout_mode = 2
+theme_type_variation = &"SlotButton"
+
+[node name="HotSlotButton5" parent="CanvasLayer/HotBarUI/PanelContainer/MarginContainer/HBoxContainer" unique_id=57621164 instance=ExtResource("8_pc3ud")]
+layout_mode = 2
+theme_type_variation = &"SlotButton"
+
+[node name="HotSlotButton6" parent="CanvasLayer/HotBarUI/PanelContainer/MarginContainer/HBoxContainer" unique_id=2135645531 instance=ExtResource("8_pc3ud")]
+layout_mode = 2
+theme_type_variation = &"SlotButton"
+
+[node name="HotSlotButton7" parent="CanvasLayer/HotBarUI/PanelContainer/MarginContainer/HBoxContainer" unique_id=2095675743 instance=ExtResource("8_pc3ud")]
+layout_mode = 2
+theme_type_variation = &"SlotButton"
+
+[node name="HotSlotButton8" parent="CanvasLayer/HotBarUI/PanelContainer/MarginContainer/HBoxContainer" unique_id=1319364040 instance=ExtResource("8_pc3ud")]
+layout_mode = 2
+theme_type_variation = &"SlotButton"
+
+[node name="HotSlotButton9" parent="CanvasLayer/HotBarUI/PanelContainer/MarginContainer/HBoxContainer" unique_id=634331070 instance=ExtResource("8_pc3ud")]
+layout_mode = 2
+theme_type_variation = &"SlotButton"
+
+[node name="HotSlotButton10" parent="CanvasLayer/HotBarUI/PanelContainer/MarginContainer/HBoxContainer" unique_id=748608677 instance=ExtResource("8_pc3ud")]
+layout_mode = 2
+theme_type_variation = &"SlotButton"
+
+[node name="Selector" type="TextureRect" parent="CanvasLayer/HotBarUI" unique_id=803336299]
+layout_mode = 0
+offset_left = 4.5
+offset_top = 5.0
+offset_right = 50.5
+offset_bottom = 51.0
+texture = SubResource("AtlasTexture_yxhq4")

@@ -1,0 +1,86 @@
+[gd_resource type="Theme" format=3 uid="uid://befijfhilgatf"]
+
+[ext_resource type="FontFile" uid="uid://ds6mg6n1hpb80" path="res://assets/ui/fonts/ChangBanDianSong-16.ttf" id="1_plol0"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_plol0"]
+content_margin_left = 4.0
+content_margin_top = 4.0
+content_margin_right = 4.0
+content_margin_bottom = 4.0
+bg_color = Color(1, 0.365, 0.365, 1)
+draw_center = false
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+corner_detail = 1
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_kmong"]
+load_path = "res://.godot/imported/ui2.png-31ea9469695b9d63e131d77b503e78d9.ctex"
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3ykx6"]
+atlas = SubResource("CompressedTexture2D_kmong")
+region = Rect2(0, 0, 44, 44)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_06k5y"]
+texture = SubResource("AtlasTexture_3ykx6")
+texture_margin_left = 20.0
+texture_margin_top = 20.0
+texture_margin_right = 20.0
+texture_margin_bottom = 20.0
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_c322h"]
+load_path = "res://.godot/imported/ui2.png-31ea9469695b9d63e131d77b503e78d9.ctex"
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3wu13"]
+atlas = SubResource("CompressedTexture2D_c322h")
+region = Rect2(0, 0, 44, 44)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_lsrwi"]
+texture = SubResource("AtlasTexture_3wu13")
+texture_margin_left = 20.0
+texture_margin_top = 20.0
+texture_margin_right = 20.0
+texture_margin_bottom = 20.0
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_u1b40"]
+load_path = "res://.godot/imported/ui2.png-31ea9469695b9d63e131d77b503e78d9.ctex"
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wi20b"]
+atlas = SubResource("CompressedTexture2D_u1b40")
+region = Rect2(0, 0, 44, 44)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_1hnrh"]
+texture = SubResource("AtlasTexture_wi20b")
+texture_margin_left = 20.0
+texture_margin_top = 20.0
+texture_margin_right = 20.0
+texture_margin_bottom = 20.0
+
+[resource]
+Label/colors/font_color = Color(18.257, 18.257, 18.257, 1)
+Label/fonts/font = ExtResource("1_plol0")
+LargeWoodPaperPanel/base_type = &"Button"
+LargeWoodPaperPanel/colors/font_color = Color(0, 0, 0, 1)
+LargeWoodPaperPanel/colors/font_disabled_color = Color(0, 0, 0, 1)
+LargeWoodPaperPanel/colors/font_focus_color = Color(0, 0, 0, 1)
+LargeWoodPaperPanel/colors/font_hover_color = Color(0, 0, 0, 1)
+LargeWoodPaperPanel/colors/font_hover_pressed_color = Color(0, 0, 0, 1)
+LargeWoodPaperPanel/colors/font_outline_color = Color(0, 0, 0, 1)
+LargeWoodPaperPanel/colors/font_pressed_color = Color(0, 0, 0, 1)
+LargeWoodPaperPanel/colors/icon_disabled_color = Color(0, 0, 0, 1)
+LargeWoodPaperPanel/colors/icon_focus_color = Color(0, 0, 0, 1)
+LargeWoodPaperPanel/colors/icon_hover_color = Color(0, 0, 0, 1)
+LargeWoodPaperPanel/colors/icon_hover_pressed_color = Color(0, 0, 0, 1)
+LargeWoodPaperPanel/colors/icon_normal_color = Color(0, 0, 0.92941177, 1)
+LargeWoodPaperPanel/colors/icon_pressed_color = Color(0, 0, 0, 1)
+LargeWoodPaperPanel/constants/align_to_largest_stylebox = 0
+LargeWoodPaperPanel/constants/h_separation = 0
+LargeWoodPaperPanel/constants/icon_max_width = 0
+LargeWoodPaperPanel/constants/outline_size = 0
+LargeWoodPaperPanel/font_sizes/font_size = 16
+LargeWoodPaperPanel/fonts/font = ExtResource("1_plol0")
+LargeWoodPaperPanel/styles/disabled = SubResource("StyleBoxFlat_plol0")
+LargeWoodPaperPanel/styles/hover = SubResource("StyleBoxTexture_06k5y")
+LargeWoodPaperPanel/styles/normal = SubResource("StyleBoxTexture_lsrwi")
+LargeWoodPaperPanel/styles/pressed = SubResource("StyleBoxTexture_1hnrh")

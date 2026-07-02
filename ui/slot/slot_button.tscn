@@ -1,0 +1,45 @@
+[gd_scene format=3 uid="uid://cqcb23bhpay8d"]
+
+[ext_resource type="Theme" uid="uid://bpc5l2iswpn4o" path="res://ui/game/game_ui_theme.tres" id="1_16ccc"]
+[ext_resource type="Script" uid="uid://b4bnecfxc0apw" path="res://ui/slot/slot_button.gd" id="2_gried"]
+
+[node name="SlotButtonControl" type="Button" unique_id=1564156477]
+custom_minimum_size = Vector2(36, 36)
+offset_right = 36.0
+offset_bottom = 36.0
+size_flags_horizontal = 0
+theme = ExtResource("1_16ccc")
+theme_type_variation = &"SlotButton"
+script = ExtResource("2_gried")
+
+[node name="SlotBackGround" type="ColorRect" parent="." unique_id=1423746553]
+custom_minimum_size = Vector2(34, 34)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -17.0
+offset_top = -17.0
+offset_right = 17.0
+offset_bottom = 17.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="CenterContainer" type="CenterContainer" parent="SlotBackGround" unique_id=1289145989]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -16.0
+offset_top = -16.0
+offset_right = 16.0
+offset_bottom = 16.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[connection signal="gui_input" from="." to="." method="_on_gui_input"]

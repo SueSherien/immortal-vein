@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="ItemData" format=3 uid="uid://5i86s26046xj"]
+
+[ext_resource type="Texture2D" uid="uid://nidpnx6xyi3x" path="res://assets/plants/jiang_icon.png" id="1_do4ry"]
+[ext_resource type="Script" uid="uid://cbffgljbv870t" path="res://resources/item_data.gd" id="1_rv5y6"]
+
+[resource]
+script = ExtResource("1_rv5y6")
+item_id = 1
+item_name = "姜"
+item_texture = ExtResource("1_do4ry")
+metadata/_custom_type_script = "uid://cbffgljbv870t"
