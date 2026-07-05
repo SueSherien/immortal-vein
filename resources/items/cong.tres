@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="ItemData" format=3 uid="uid://b8rfgdx31byvu"]
+
+[ext_resource type="Texture2D" uid="uid://7u22h3eu14ts" path="res://assets/plants/seeds_crops.png" id="1_ftobx"]
+[ext_resource type="Script" uid="uid://cbffgljbv870t" path="res://resources/items/item_data.gd" id="2_tej60"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mmaag"]
+atlas = ExtResource("1_ftobx")
+region = Rect2(32, 0, 32, 32)
+
+[resource]
+script = ExtResource("2_tej60")
+item_id = 2001
+item_name = "葱"
+item_texture = SubResource("AtlasTexture_mmaag")
+metadata/_custom_type_script = "uid://cbffgljbv870t"

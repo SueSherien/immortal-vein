@@ -6,9 +6,10 @@
 [ext_resource type="FontFile" uid="uid://ds6mg6n1hpb80" path="res://assets/ui/fonts/ChangBanDianSong-16.ttf" id="3_ke6fc"]
 [ext_resource type="Texture2D" uid="uid://b6pi7x3hwdk7c" path="res://assets/ui/pointer.png" id="3_lkn3m"]
 [ext_resource type="Script" uid="uid://ch65mh4g5m6lh" path="res://ui/game/bag_ui.gd" id="5_b3mny"]
-[ext_resource type="PackedScene" uid="uid://cqcb23bhpay8d" path="res://ui/slot/slot_button.tscn" id="6_2g71p"]
-[ext_resource type="PackedScene" uid="uid://t53irdbb6jyy" path="res://ui/slot/hot_slot_button.tscn" id="8_pc3ud"]
+[ext_resource type="PackedScene" uid="uid://cqcb23bhpay8d" path="res://ui/slots/slot_button.tscn" id="6_2g71p"]
+[ext_resource type="PackedScene" uid="uid://t53irdbb6jyy" path="res://ui/slots/hot_slot_button.tscn" id="8_pc3ud"]
 [ext_resource type="Script" uid="uid://1xbym7dvwtv2" path="res://ui/game/hot_bar_ui.gd" id="8_yw7c2"]
+[ext_resource type="PackedScene" uid="uid://b23dshfd2lkf" path="res://ui/game/harvest_prompt.tscn" id="10_7okqv"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_m2hwu"]
 atlas = ExtResource("1_yc87g")
@@ -890,3 +891,5 @@ offset_top = 5.0
 offset_right = 50.5
 offset_bottom = 51.0
 texture = SubResource("AtlasTexture_yxhq4")
+
+[node name="HarvestPrompt" parent="CanvasLayer" unique_id=1015963717 instance=ExtResource("10_7okqv")]

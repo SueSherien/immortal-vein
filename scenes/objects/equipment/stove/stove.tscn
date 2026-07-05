@@ -9,6 +9,6 @@ y_sort_enabled = true
 texture = ExtResource("1_n3v8a")
 offset = Vector2(0, -20)
 
-[node name="CollisionShape2D" type="CollisionPolygon2D" parent="." unique_id=1328875520]
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="." unique_id=1328875520]
 position = Vector2(0, -19)
 polygon = PackedVector2Array(-8, 35, 40, 11, 1, -8, -40, 11, -40, 19)

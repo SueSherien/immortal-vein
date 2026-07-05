@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="PlantData" format=3 uid="uid://2llrpwwcxkko"]
+
+[ext_resource type="Texture2D" uid="uid://c35fae1aolc53" path="res://assets/plants/plants.png" id="1_0p7mp"]
+[ext_resource type="Script" uid="uid://b1x21e21p6j20" path="res://resources/plants/plant_data.gd" id="1_u4iqd"]
+[ext_resource type="Resource" uid="uid://b8rfgdx31byvu" path="res://resources/items/cong.tres" id="2_nwjxg"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_t2m67"]
+atlas = ExtResource("1_0p7mp")
+region = Rect2(0, 1, 128, 35)
+
+[resource]
+script = ExtResource("1_u4iqd")
+growth_atlas = SubResource("AtlasTexture_t2m67")
+harvest_type = 1
+harvest_item = ExtResource("2_nwjxg")
+metadata/_custom_type_script = "uid://b1x21e21p6j20"

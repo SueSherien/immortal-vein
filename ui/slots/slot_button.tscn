@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://cqcb23bhpay8d"]
 
 [ext_resource type="Theme" uid="uid://bpc5l2iswpn4o" path="res://ui/game/game_ui_theme.tres" id="1_16ccc"]
-[ext_resource type="Script" uid="uid://b4bnecfxc0apw" path="res://ui/slot/slot_button.gd" id="2_gried"]
+[ext_resource type="Script" uid="uid://b4bnecfxc0apw" path="res://ui/slots/slot_button.gd" id="2_gried"]
 
 [node name="SlotButtonControl" type="Button" unique_id=1564156477]
 custom_minimum_size = Vector2(36, 36)

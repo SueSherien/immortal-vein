@@ -1,9 +1,8 @@
 [gd_resource type="Resource" script_class="Inventory" format=3 uid="uid://b3lmmssu3hfb5"]
 
 [ext_resource type="Script" uid="uid://cds7u8xrqt6h1" path="res://scripts/inventory_manager.gd" id="1_w050v"]
-[ext_resource type="Script" uid="uid://ja2bmk6vhhnc" path="res://ui/slot/slot.gd" id="2_7yag8"]
-[ext_resource type="Resource" uid="uid://fnfsog8o417m" path="res://resources/cong.tres" id="3_7yag8"]
-[ext_resource type="Resource" uid="uid://5i86s26046xj" path="res://resources/jiang.tres" id="4_k0lcj"]
+[ext_resource type="Script" uid="uid://ja2bmk6vhhnc" path="res://ui/slots/slot.gd" id="2_7yag8"]
+[ext_resource type="Resource" uid="uid://be73arcl1fbxs" path="res://resources/items/seed_cong.tres" id="3_7yag8"]
 
 [sub_resource type="Resource" id="Resource_k0lcj"]
 script = ExtResource("2_7yag8")
@@ -13,19 +12,16 @@ metadata/_custom_type_script = "uid://ja2bmk6vhhnc"
 
 [sub_resource type="Resource" id="Resource_q6x4j"]
 script = ExtResource("2_7yag8")
-item = ExtResource("3_7yag8")
 count = 51
 metadata/_custom_type_script = "uid://ja2bmk6vhhnc"
 
 [sub_resource type="Resource" id="Resource_ihncn"]
 script = ExtResource("2_7yag8")
-item = ExtResource("4_k0lcj")
 count = 30
 metadata/_custom_type_script = "uid://ja2bmk6vhhnc"
 
 [sub_resource type="Resource" id="Resource_4fyuv"]
 script = ExtResource("2_7yag8")
-item = ExtResource("4_k0lcj")
 count = 40
 metadata/_custom_type_script = "uid://ja2bmk6vhhnc"
 

@@ -1,55 +1,78 @@
+# inventory_manager.gd
+# 库存管理器 - 管理玩家的背包和快捷栏
 extends Resource
-
-#给背包起一个类名，后续控制背包都靠这个类
 class_name Inventory
 
-#库存更新信号，数据变化时，给UI发送信号通知更新
-signal inventory_update
+# ==================== 信号 ====================
+signal inventory_update  # 库存变化时触发
 
-#定义一个Slot类型的数组slots，默认空数组
-#数组是背包容器，所有格子都存在这里
-@export var slots: Array[Slot]
+# ==================== 数据 ====================
+@export var slots: Array[Slot]  # 所有格子
 
-#移除库存格子物品
-func remove_slot(slot__: Slot):
-	var index_ = slots.find(slot__)
-	if index_ < 0: return
-	#把索引位置格子替换成一个新的空格子Slot
+# ==================== 基础操作 ====================
+# 移除指定格子的物品
+func remove_slot(slot_: Slot):
+	var index_ = slots.find(slot_)
+	if index_ < 0:
+		return
 	slots[index_] = Slot.new()
-	#发送库存更新信号，通知UI同步更新
 	inventory_update.emit()
-	
-#插入物品到指定库存格子的函数，背包放入物品时调用这个函数更新库存
-func insert_slot(slot_index: int, slot__: Slot):
-	#把传入的物品格子数据(slot__)赋值给slots数组
-	slots[slot_index] = slot__
-	#发送更新信号，通知UI库存同步更新
+
+# 插入物品到指定格子
+func insert_slot(slot_index: int, slot_: Slot):
+	slots[slot_index] = slot_
 	inventory_update.emit()
-	
-#使用快捷栏对应索引的物品，use_index：参数，快捷栏格子的索引
+
+# 清空格子
+func clear_item(clear_index: int):
+	slots[clear_index] = Slot.new()
+	inventory_update.emit()
+
+# ==================== 使用物品 ====================
+# 使用快捷栏指定索引的物品（消耗1个）
 func use_item(use_index: int):
-	#容错判断，避免报错
-	if use_index < 0 or use_index >= slots.size() or !slots[use_index].item:
+	if use_index < 0 or use_index >= slots.size() or not slots[use_index].item:
 		return
 	
-	#获取要使用的库存格子（快捷栏索引对应的实际库存格子）
 	var use_slot = slots[use_index]
 	
-	#物品数量大于1，只使用1个，不删除物品
 	if use_slot.count > 1:
 		use_slot.count -= 1
 		inventory_update.emit()
 		return
-		
-	clear_item(use_index)
 	
+	clear_item(use_index)
+
+# 使用工具（预留）
 func use_tool(use_index: int):
 	pass
-		
-func clear_item(clear_index: int):
-	#把索引位置格子替换成一个新的空格子Slot
-	slots[clear_index] = Slot.new()
-	#发送库存更新信号，通知UI同步更新
+
+# ==================== 添加物品 ====================
+# 添加物品到背包，返回是否成功
+func add_item(item: ItemData, count: int = 1) -> bool:
+	var remaining = count
+	
+	# 先找同类堆叠
+	for i in range(slots.size()):
+		var slot = slots[i]
+		if slot.item and slot.item.item_id == item.item_id and slot.count < slot.item.max_stack:
+			var add = min(remaining, slot.item.max_stack - slot.count)
+			slot.count += add
+			remaining -= add
+			if remaining <= 0:
+				inventory_update.emit()
+				return true
+	
+	# 再找空位
+	for i in range(slots.size()):
+		if not slots[i].item:
+			var new_slot = Slot.new()
+			new_slot.item = item
+			new_slot.count = remaining
+			slots[i] = new_slot
+			inventory_update.emit()
+			return true
+	
+	# 背包已满
 	inventory_update.emit()
-	
-	
+	return false

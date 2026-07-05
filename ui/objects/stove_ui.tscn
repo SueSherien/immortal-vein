@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://bchjg8aw88i8v"]
 
 [ext_resource type="Theme" uid="uid://bpc5l2iswpn4o" path="res://ui/game/game_ui_theme.tres" id="1_wxaxt"]
-[ext_resource type="PackedScene" uid="uid://cqcb23bhpay8d" path="res://ui/slot/slot_button.tscn" id="2_f2tgf"]
+[ext_resource type="PackedScene" uid="uid://cqcb23bhpay8d" path="res://ui/slots/slot_button.tscn" id="2_f2tgf"]
 [ext_resource type="Texture2D" uid="uid://wj41vxhwu0v8" path="res://assets/ui/ui2.png" id="2_ox15n"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_f2tgf"]
