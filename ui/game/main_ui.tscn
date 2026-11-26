@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://x2smih5vca81"]
 
-[ext_resource type="Texture2D" uid="uid://du6hri5ko8blg" path="res://assets/ui/clock_ui.png" id="1_yc87g"]
+[ext_resource type="Texture2D" uid="uid://c57wcxebmnn0f" path="res://assets/ui/clock_ui2.png" id="1_2tggj"]
 [ext_resource type="Theme" uid="uid://bpc5l2iswpn4o" path="res://ui/game/game_ui_theme.tres" id="2_d7okr"]
 [ext_resource type="Script" uid="uid://bgnfxu2c27n61" path="res://ui/game/time_ui.gd" id="2_lkn3m"]
 [ext_resource type="FontFile" uid="uid://ds6mg6n1hpb80" path="res://assets/ui/fonts/ChangBanDianSong-16.ttf" id="3_ke6fc"]
@@ -9,151 +9,194 @@
 [ext_resource type="PackedScene" uid="uid://cqcb23bhpay8d" path="res://ui/slots/slot_button.tscn" id="6_2g71p"]
 [ext_resource type="PackedScene" uid="uid://t53irdbb6jyy" path="res://ui/slots/hot_slot_button.tscn" id="8_pc3ud"]
 [ext_resource type="Script" uid="uid://1xbym7dvwtv2" path="res://ui/game/hot_bar_ui.gd" id="8_yw7c2"]
+[ext_resource type="Texture2D" uid="uid://djjvincm6t563" path="res://assets/ui/game_ui_usual.png" id="10_2tggj"]
 [ext_resource type="PackedScene" uid="uid://b23dshfd2lkf" path="res://ui/game/harvest_prompt.tscn" id="10_7okqv"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_m2hwu"]
-atlas = ExtResource("1_yc87g")
+atlas = ExtResource("1_2tggj")
 region = Rect2(0, 72, 138, 97)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_yc87g"]
-atlas = ExtResource("1_yc87g")
+atlas = ExtResource("1_2tggj")
 region = Rect2(0, 22, 20, 21)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_d7okr"]
-atlas = ExtResource("1_yc87g")
+atlas = ExtResource("1_2tggj")
 region = Rect2(0, 44, 20, 21)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_lkn3m"]
-atlas = ExtResource("1_yc87g")
+atlas = ExtResource("1_2tggj")
 region = Rect2(21, 0, 20, 21)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_ke6fc"]
-atlas = ExtResource("1_yc87g")
+atlas = ExtResource("1_2tggj")
 region = Rect2(21, 0, 20, 21)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_2g71p"]
-atlas = ExtResource("1_yc87g")
+atlas = ExtResource("1_2tggj")
 region = Rect2(21, 0, 20, 21)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_b3mny"]
-atlas = ExtResource("1_yc87g")
+atlas = ExtResource("1_2tggj")
 region = Rect2(42, 22, 20, 21)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_pc3ud"]
-atlas = ExtResource("1_yc87g")
+atlas = ExtResource("1_2tggj")
 region = Rect2(42, 44, 20, 21)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_yw7c2"]
-atlas = ExtResource("1_yc87g")
+atlas = ExtResource("1_2tggj")
 region = Rect2(21, 22, 20, 21)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_7okqv"]
-atlas = ExtResource("1_yc87g")
+atlas = ExtResource("1_2tggj")
 region = Rect2(21, 22, 20, 21)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_vor7y"]
-atlas = ExtResource("1_yc87g")
+atlas = ExtResource("1_2tggj")
 region = Rect2(21, 22, 20, 21)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_w08ax"]
-atlas = ExtResource("1_yc87g")
+atlas = ExtResource("1_2tggj")
 region = Rect2(21, 22, 20, 21)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_b7dow"]
-atlas = ExtResource("1_yc87g")
+atlas = ExtResource("1_2tggj")
 region = Rect2(21, 44, 20, 21)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_3jxcf"]
-atlas = ExtResource("1_yc87g")
-region = Rect2(74, 59, 17, 11)
+atlas = ExtResource("1_2tggj")
+region = Rect2(151, 86, 17, 11)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_75815"]
-atlas = ExtResource("1_yc87g")
-region = Rect2(183, 0, 41, 43)
+atlas = ExtResource("1_2tggj")
+region = Rect2(62, 0, 41, 43)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_cbo24"]
-atlas = ExtResource("1_yc87g")
-region = Rect2(183, 90, 41, 43)
+atlas = ExtResource("1_2tggj")
+region = Rect2(146, 0, 41, 43)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_hsp80"]
-atlas = ExtResource("1_yc87g")
-region = Rect2(183, 45, 41, 43)
+atlas = ExtResource("1_2tggj")
+region = Rect2(104, 0, 41, 43)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_ea8c5"]
-atlas = ExtResource("1_yc87g")
-region = Rect2(63, 60, 9, 9)
+atlas = ExtResource("1_2tggj")
+region = Rect2(140, 87, 9, 9)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_ein5l"]
-atlas = ExtResource("1_yc87g")
-region = Rect2(227, 112, 21, 21)
+atlas = ExtResource("1_2tggj")
+region = Rect2(187, 187, 21, 21)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_yhfdy"]
-atlas = ExtResource("1_yc87g")
-region = Rect2(203, 134, 21, 36)
+atlas = ExtResource("1_2tggj")
+region = Rect2(187, 117, 21, 34)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_70c7b"]
-atlas = ExtResource("1_yc87g")
-region = Rect2(227, 134, 21, 27)
+atlas = ExtResource("1_2tggj")
+region = Rect2(187, 158, 21, 27)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_ic07s"]
-atlas = ExtResource("1_yc87g")
-region = Rect2(227, 0, 21, 52)
+atlas = ExtResource("1_2tggj")
+region = Rect2(187, 0, 21, 52)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_io4j5"]
-atlas = ExtResource("1_yc87g")
-region = Rect2(227, 53, 21, 58)
+atlas = ExtResource("1_2tggj")
+region = Rect2(187, 58, 21, 58)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_58x5e"]
-atlas = ExtResource("1_yc87g")
-region = Rect2(140, 145, 20, 16)
+atlas = ExtResource("1_2tggj")
+region = Rect2(64, 48, 20, 16)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_xejep"]
-atlas = ExtResource("1_yc87g")
-region = Rect2(140, 163, 20, 16)
+atlas = ExtResource("1_2tggj")
+region = Rect2(108, 48, 20, 16)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_akkmt"]
-atlas = ExtResource("1_yc87g")
-region = Rect2(162, 145, 20, 16)
+atlas = ExtResource("1_2tggj")
+region = Rect2(86, 48, 20, 16)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_5bd6d"]
-atlas = ExtResource("1_yc87g")
-region = Rect2(140, 103, 13, 13)
+atlas = ExtResource("1_2tggj")
+region = Rect2(140, 141, 13, 13)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_j3uwy"]
-atlas = ExtResource("1_yc87g")
-region = Rect2(168, 103, 13, 13)
+atlas = ExtResource("1_2tggj")
+region = Rect2(168, 141, 13, 13)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_xfr31"]
-atlas = ExtResource("1_yc87g")
-region = Rect2(154, 103, 13, 13)
+atlas = ExtResource("1_2tggj")
+region = Rect2(154, 141, 13, 13)
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_2tggj"]
+load_path = "res://.godot/imported/clock_ui2.png-c79d2da16b5dedc4c72a832f07f1f091.ctex"
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dq6jr"]
+atlas = SubResource("CompressedTexture2D_2tggj")
+region = Rect2(140, 127, 13, 13)
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_6al76"]
+load_path = "res://.godot/imported/clock_ui2.png-c79d2da16b5dedc4c72a832f07f1f091.ctex"
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3khah"]
+atlas = SubResource("CompressedTexture2D_6al76")
+region = Rect2(168, 127, 13, 13)
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_cgjad"]
+load_path = "res://.godot/imported/clock_ui2.png-c79d2da16b5dedc4c72a832f07f1f091.ctex"
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1b0iw"]
+atlas = SubResource("CompressedTexture2D_cgjad")
+region = Rect2(154, 127, 13, 13)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_laays"]
-atlas = ExtResource("1_yc87g")
-region = Rect2(140, 89, 13, 13)
+atlas = ExtResource("1_2tggj")
+region = Rect2(140, 113, 13, 13)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_1v6rg"]
-atlas = ExtResource("1_yc87g")
-region = Rect2(168, 89, 13, 13)
+atlas = ExtResource("1_2tggj")
+region = Rect2(168, 113, 13, 13)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_7upbu"]
-atlas = ExtResource("1_yc87g")
-region = Rect2(154, 89, 13, 13)
+atlas = ExtResource("1_2tggj")
+region = Rect2(154, 113, 13, 13)
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_8cpdo"]
+load_path = "res://.godot/imported/clock_ui2.png-c79d2da16b5dedc4c72a832f07f1f091.ctex"
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_80okg"]
+atlas = SubResource("CompressedTexture2D_8cpdo")
+region = Rect2(140, 155, 13, 13)
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_ytoin"]
+load_path = "res://.godot/imported/clock_ui2.png-c79d2da16b5dedc4c72a832f07f1f091.ctex"
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1y03w"]
+atlas = SubResource("CompressedTexture2D_ytoin")
+region = Rect2(168, 155, 13, 13)
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_w27ln"]
+load_path = "res://.godot/imported/clock_ui2.png-c79d2da16b5dedc4c72a832f07f1f091.ctex"
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mtsiy"]
+atlas = SubResource("CompressedTexture2D_w27ln")
+region = Rect2(154, 155, 13, 13)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_nnajj"]
-atlas = ExtResource("1_yc87g")
-region = Rect2(140, 75, 13, 13)
+atlas = ExtResource("1_2tggj")
+region = Rect2(140, 99, 13, 13)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_hlpak"]
-atlas = ExtResource("1_yc87g")
-region = Rect2(168, 75, 13, 13)
+atlas = ExtResource("1_2tggj")
+region = Rect2(168, 99, 13, 13)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_mry7j"]
-atlas = ExtResource("1_yc87g")
-region = Rect2(154, 75, 13, 13)
+atlas = ExtResource("1_2tggj")
+region = Rect2(154, 99, 13, 13)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_yxhq4"]
-atlas = ExtResource("1_yc87g")
-region = Rect2(67, 5, 46, 46)
+atlas = ExtResource("10_2tggj")
+region = Rect2(176, 0, 46, 46)
 
 [node name="GameUI" type="Control" unique_id=155868875]
 layout_mode = 3
@@ -553,17 +596,31 @@ offset_bottom = 15.0
 grow_horizontal = 0
 theme_override_constants/separation = 1
 
-[node name="PauseButton" type="TextureButton" parent="CanvasLayer/TimeDataUI/ControlButton" unique_id=318183365]
+[node name="ContinueButton" type="TextureButton" parent="CanvasLayer/TimeDataUI/ControlButton" unique_id=1564434349]
+visible = false
 layout_mode = 2
 texture_normal = SubResource("AtlasTexture_5bd6d")
 texture_pressed = SubResource("AtlasTexture_j3uwy")
 texture_hover = SubResource("AtlasTexture_xfr31")
+
+[node name="PauseButton" type="TextureButton" parent="CanvasLayer/TimeDataUI/ControlButton" unique_id=318183365]
+layout_mode = 2
+texture_normal = SubResource("AtlasTexture_dq6jr")
+texture_pressed = SubResource("AtlasTexture_3khah")
+texture_hover = SubResource("AtlasTexture_1b0iw")
 
 [node name="MenuButton" type="TextureButton" parent="CanvasLayer/TimeDataUI/ControlButton" unique_id=1374347082]
 layout_mode = 2
 texture_normal = SubResource("AtlasTexture_laays")
 texture_pressed = SubResource("AtlasTexture_1v6rg")
 texture_hover = SubResource("AtlasTexture_7upbu")
+
+[node name="DisplayButton" type="TextureButton" parent="CanvasLayer/TimeDataUI/ControlButton" unique_id=741467469]
+visible = false
+layout_mode = 2
+texture_normal = SubResource("AtlasTexture_80okg")
+texture_pressed = SubResource("AtlasTexture_1y03w")
+texture_hover = SubResource("AtlasTexture_mtsiy")
 
 [node name="HideButton" type="TextureButton" parent="CanvasLayer/TimeDataUI/ControlButton" unique_id=863016027]
 layout_mode = 2
@@ -604,6 +661,7 @@ theme_type_variation = &"WoodBorderPanel"
 
 [node name="MarginContainer" type="MarginContainer" parent="CanvasLayer/BagUI/HotBarPanel" unique_id=877661714]
 layout_mode = 2
+theme_override_constants/margin_left = 5
 
 [node name="HotSlotContainer" type="HBoxContainer" parent="CanvasLayer/BagUI/HotBarPanel/MarginContainer" unique_id=1642640371]
 layout_mode = 2
@@ -821,18 +879,28 @@ anchor_left = 0.5
 anchor_top = 1.0
 anchor_right = 0.5
 anchor_bottom = 1.0
-offset_left = -212.5
-offset_top = -56.0
-offset_right = 212.5
+offset_left = -220.25
+offset_top = -88.0
+offset_right = 220.25
 grow_horizontal = 2
 grow_vertical = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
 mouse_filter = 2
 script = ExtResource("8_yw7c2")
 
 [node name="PanelContainer" type="PanelContainer" parent="CanvasLayer/HotBarUI" unique_id=637639722]
 layout_mode = 1
-offset_right = 425.0
-offset_bottom = 56.0
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -212.5
+offset_top = -56.0
+offset_right = 212.5
+grow_horizontal = 2
+grow_vertical = 0
 mouse_filter = 2
 theme = ExtResource("2_d7okr")
 theme_type_variation = &"WoodBorderPanel"
@@ -846,50 +914,40 @@ theme_override_constants/separation = 5
 
 [node name="HotSlotButton" parent="CanvasLayer/HotBarUI/PanelContainer/MarginContainer/HBoxContainer" unique_id=776334358 instance=ExtResource("8_pc3ud")]
 layout_mode = 2
-theme_type_variation = &"SlotButton"
 
 [node name="HotSlotButton2" parent="CanvasLayer/HotBarUI/PanelContainer/MarginContainer/HBoxContainer" unique_id=464047096 instance=ExtResource("8_pc3ud")]
 layout_mode = 2
-theme_type_variation = &"SlotButton"
 
 [node name="HotSlotButton3" parent="CanvasLayer/HotBarUI/PanelContainer/MarginContainer/HBoxContainer" unique_id=949555051 instance=ExtResource("8_pc3ud")]
 layout_mode = 2
-theme_type_variation = &"SlotButton"
 
 [node name="HotSlotButton4" parent="CanvasLayer/HotBarUI/PanelContainer/MarginContainer/HBoxContainer" unique_id=501636560 instance=ExtResource("8_pc3ud")]
 layout_mode = 2
-theme_type_variation = &"SlotButton"
 
 [node name="HotSlotButton5" parent="CanvasLayer/HotBarUI/PanelContainer/MarginContainer/HBoxContainer" unique_id=57621164 instance=ExtResource("8_pc3ud")]
 layout_mode = 2
-theme_type_variation = &"SlotButton"
 
 [node name="HotSlotButton6" parent="CanvasLayer/HotBarUI/PanelContainer/MarginContainer/HBoxContainer" unique_id=2135645531 instance=ExtResource("8_pc3ud")]
 layout_mode = 2
-theme_type_variation = &"SlotButton"
 
 [node name="HotSlotButton7" parent="CanvasLayer/HotBarUI/PanelContainer/MarginContainer/HBoxContainer" unique_id=2095675743 instance=ExtResource("8_pc3ud")]
 layout_mode = 2
-theme_type_variation = &"SlotButton"
 
 [node name="HotSlotButton8" parent="CanvasLayer/HotBarUI/PanelContainer/MarginContainer/HBoxContainer" unique_id=1319364040 instance=ExtResource("8_pc3ud")]
 layout_mode = 2
-theme_type_variation = &"SlotButton"
 
 [node name="HotSlotButton9" parent="CanvasLayer/HotBarUI/PanelContainer/MarginContainer/HBoxContainer" unique_id=634331070 instance=ExtResource("8_pc3ud")]
 layout_mode = 2
-theme_type_variation = &"SlotButton"
 
 [node name="HotSlotButton10" parent="CanvasLayer/HotBarUI/PanelContainer/MarginContainer/HBoxContainer" unique_id=748608677 instance=ExtResource("8_pc3ud")]
 layout_mode = 2
-theme_type_variation = &"SlotButton"
 
 [node name="Selector" type="TextureRect" parent="CanvasLayer/HotBarUI" unique_id=803336299]
-layout_mode = 0
-offset_left = 4.5
-offset_top = 5.0
-offset_right = 50.5
-offset_bottom = 51.0
+layout_mode = 1
+offset_left = 13.25
+offset_top = 37.0
+offset_right = 59.25
+offset_bottom = 83.0
 texture = SubResource("AtlasTexture_yxhq4")
 
 [node name="HarvestPrompt" parent="CanvasLayer" unique_id=1015963717 instance=ExtResource("10_7okqv")]

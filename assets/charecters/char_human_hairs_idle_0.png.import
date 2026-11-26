@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://756iynqyi06j"
-path="res://.godot/imported/main_ui.png-fd5c823293733203b7fbcd602155cbf3.ctex"
+uid="uid://bauqcjo201mw7"
+path="res://.godot/imported/char_human_hairs_idle_0.png-b972bc6b20b25fd4b0c04b1800ee47a6.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/ui/main_ui.png"
-dest_files=["res://.godot/imported/main_ui.png-fd5c823293733203b7fbcd602155cbf3.ctex"]
+source_file="res://assets/charecters/char_human_hairs_idle_0.png"
+dest_files=["res://.godot/imported/char_human_hairs_idle_0.png-b972bc6b20b25fd4b0c04b1800ee47a6.ctex"]
 
 [params]
 

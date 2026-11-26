@@ -10,16 +10,16 @@ offset_right = 36.0
 offset_bottom = 36.0
 size_flags_horizontal = 0
 theme = ExtResource("1_28gjh")
-theme_type_variation = &"ToolsButton"
+theme_type_variation = &"SlotButton"
 script = ExtResource("2_rpl0k")
 
 [node name="SlotBackGround" type="ColorRect" parent="." unique_id=1423746553]
-custom_minimum_size = Vector2(34, 34)
+custom_minimum_size = Vector2(32, 32)
 layout_mode = 0
-offset_left = 1.0
-offset_top = 1.0
-offset_right = 35.0
-offset_bottom = 35.0
+offset_left = 2.0
+offset_top = 2.0
+offset_right = 34.0
+offset_bottom = 34.0
 mouse_filter = 2
 
 [node name="CenterContainer" type="CenterContainer" parent="SlotBackGround" unique_id=1289145989]

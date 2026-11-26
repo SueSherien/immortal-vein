@@ -1,97 +1,125 @@
 [gd_resource type="Theme" format=3 uid="uid://bpc5l2iswpn4o"]
 
-[ext_resource type="Texture2D" uid="uid://wj41vxhwu0v8" path="res://assets/ui/ui2.png" id="1_ddq04"]
-[ext_resource type="Texture2D" uid="uid://du6hri5ko8blg" path="res://assets/ui/clock_ui.png" id="2_syiyn"]
+[ext_resource type="Texture2D" uid="uid://djjvincm6t563" path="res://assets/ui/game_ui_usual.png" id="2_4egxt"]
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_x2hj3"]
-atlas = ExtResource("1_ddq04")
-region = Rect2(0, 86, 44, 48)
+[sub_resource type="AtlasTexture" id="AtlasTexture_muyoi"]
+atlas = ExtResource("2_4egxt")
+region = Rect2(0, 35, 32, 32)
 
-[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_vvhut"]
-texture = SubResource("AtlasTexture_x2hj3")
-texture_margin_left = 20.0
-texture_margin_top = 24.0
-texture_margin_right = 20.0
-texture_margin_bottom = 20.0
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_v7gi1"]
+texture = SubResource("AtlasTexture_muyoi")
+texture_margin_left = 8.0
+texture_margin_top = 8.0
+texture_margin_right = 8.0
+texture_margin_bottom = 8.0
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_8srbs"]
+load_path = "res://.godot/imported/game_ui_usual.png-55e27c22a8121144773f2189b43b10cd.ctex"
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_4egxt"]
-atlas = ExtResource("1_ddq04")
-region = Rect2(120, 59, 26, 24)
+atlas = SubResource("CompressedTexture2D_8srbs")
+region = Rect2(123, 0, 10, 16)
 
-[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_3x56n"]
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_8srbs"]
 texture = SubResource("AtlasTexture_4egxt")
-texture_margin_left = 4.0
-texture_margin_top = 4.0
-texture_margin_right = 4.0
-texture_margin_bottom = 3.0
+texture_margin_left = 7.0
+texture_margin_top = 7.0
+texture_margin_right = 2.0
+texture_margin_bottom = 7.0
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_18umn"]
-atlas = ExtResource("1_ddq04")
-region = Rect2(93, 57, 26, 26)
+atlas = ExtResource("2_4egxt")
+region = Rect2(112, 0, 10, 16)
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_4egxt"]
 texture = SubResource("AtlasTexture_18umn")
-texture_margin_left = 4.0
-texture_margin_top = 4.0
-texture_margin_right = 4.0
-texture_margin_bottom = 4.0
+texture_margin_left = 8.0
+texture_margin_top = 7.0
+texture_margin_right = 3.0
+texture_margin_bottom = 7.0
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8srbs"]
+atlas = ExtResource("2_4egxt")
+region = Rect2(134, 0, 10, 16)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_3x56n"]
+texture = SubResource("AtlasTexture_8srbs")
+texture_margin_left = 7.0
+texture_margin_top = 7.0
+texture_margin_right = 2.0
+texture_margin_bottom = 7.0
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_lm05u"]
-atlas = ExtResource("1_ddq04")
-region = Rect2(0, 53, 92, 30)
+atlas = ExtResource("2_4egxt")
+region = Rect2(123, 16, 10, 16)
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_muyoi"]
 texture = SubResource("AtlasTexture_lm05u")
-texture_margin_left = 4.0
-texture_margin_top = 4.0
-texture_margin_right = 4.0
+texture_margin_left = 2.0
+texture_margin_top = 7.0
+texture_margin_right = 7.0
+texture_margin_bottom = 7.0
 
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_4egxt"]
-load_path = "res://.godot/imported/clock_ui.png-6a8a8b7e7ade58150030908c8affc712.ctex"
+[sub_resource type="AtlasTexture" id="AtlasTexture_v7gi1"]
+atlas = ExtResource("2_4egxt")
+region = Rect2(112, 16, 10, 16)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_7bp4g"]
+texture = SubResource("AtlasTexture_v7gi1")
+texture_margin_left = 2.0
+texture_margin_top = 7.0
+texture_margin_right = 7.0
+texture_margin_bottom = 7.0
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_l810o"]
+atlas = ExtResource("2_4egxt")
+region = Rect2(134, 16, 10, 16)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_agdu2"]
+texture = SubResource("AtlasTexture_l810o")
+texture_margin_left = 2.0
+texture_margin_top = 7.0
+texture_margin_right = 7.0
+texture_margin_bottom = 7.0
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_3x56n"]
-atlas = SubResource("CompressedTexture2D_4egxt")
-region = Rect2(39, 185, 34, 34)
+atlas = ExtResource("2_4egxt")
+region = Rect2(72, 0, 38, 38)
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_18umn"]
 texture = SubResource("AtlasTexture_3x56n")
-texture_margin_left = 1.0
-texture_margin_top = 1.0
-texture_margin_right = 1.0
-texture_margin_bottom = 1.0
-region_rect = Rect2(0, 0, 34, 34)
-
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_ywfuq"]
-load_path = "res://.godot/imported/clock_ui.png-6a8a8b7e7ade58150030908c8affc712.ctex"
+texture_margin_left = 3.0
+texture_margin_top = 3.0
+texture_margin_right = 3.0
+texture_margin_bottom = 3.0
+region_rect = Rect2(0, 0, 38, 38)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_2doy5"]
-atlas = SubResource("CompressedTexture2D_ywfuq")
-region = Rect2(0, 185, 34, 34)
+atlas = ExtResource("2_4egxt")
+region = Rect2(33, 0, 38, 38)
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_lm05u"]
 texture = SubResource("AtlasTexture_2doy5")
-texture_margin_left = 1.0
-texture_margin_top = 1.0
-texture_margin_right = 1.0
-texture_margin_bottom = 1.0
-
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_3x56n"]
-load_path = "res://.godot/imported/clock_ui.png-6a8a8b7e7ade58150030908c8affc712.ctex"
+texture_margin_left = 3.0
+texture_margin_top = 3.0
+texture_margin_right = 3.0
+texture_margin_bottom = 3.0
+region_rect = Rect2(0, 0, 38, 38)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_ywfuq"]
-atlas = SubResource("CompressedTexture2D_3x56n")
-region = Rect2(0, 185, 34, 34)
+atlas = ExtResource("2_4egxt")
+region = Rect2(33, 0, 38, 38)
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_2doy5"]
 texture = SubResource("AtlasTexture_ywfuq")
-texture_margin_left = 1.0
-texture_margin_top = 1.0
-texture_margin_right = 1.0
-texture_margin_bottom = 1.0
+texture_margin_left = 3.0
+texture_margin_top = 3.0
+texture_margin_right = 3.0
+texture_margin_bottom = 3.0
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_7kjay"]
-atlas = ExtResource("2_syiyn")
-region = Rect2(119, 1, 54, 54)
+atlas = ExtResource("2_4egxt")
+region = Rect2(0, 0, 32, 32)
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_d4foe"]
 texture = SubResource("AtlasTexture_7kjay")
@@ -105,13 +133,16 @@ MarginContainer/constants/margin_bottom = 5
 MarginContainer/constants/margin_left = 5
 MarginContainer/constants/margin_right = 5
 MarginContainer/constants/margin_top = 5
-ObjectPanel/base_type = &"PanelContainer"
-ObjectPanel/styles/panel = SubResource("StyleBoxTexture_vvhut")
-RetrieveButton/base_type = &"Button"
-RetrieveButton/styles/normal = SubResource("StyleBoxTexture_3x56n")
-RetrieveButton/styles/pressed = SubResource("StyleBoxTexture_4egxt")
-RetrievePanel/base_type = &"PanelContainer"
-RetrievePanel/styles/panel = SubResource("StyleBoxTexture_muyoi")
+PaperPanel/base_type = &"PanelContainer"
+PaperPanel/styles/panel = SubResource("StyleBoxTexture_v7gi1")
+SelectButtonL/base_type = &"Button"
+SelectButtonL/styles/hover = SubResource("StyleBoxTexture_8srbs")
+SelectButtonL/styles/normal = SubResource("StyleBoxTexture_4egxt")
+SelectButtonL/styles/pressed = SubResource("StyleBoxTexture_3x56n")
+SelectButtonR/base_type = &"Button"
+SelectButtonR/styles/hover = SubResource("StyleBoxTexture_muyoi")
+SelectButtonR/styles/normal = SubResource("StyleBoxTexture_7bp4g")
+SelectButtonR/styles/pressed = SubResource("StyleBoxTexture_agdu2")
 SlotButton/base_type = &"Button"
 SlotButton/styles/hover = SubResource("StyleBoxTexture_18umn")
 SlotButton/styles/normal = SubResource("StyleBoxTexture_lm05u")

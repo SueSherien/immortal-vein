@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://5ybnb3hny1d8"
-path="res://.godot/imported/field_wet.png-70d85fbfda05282b4cfe03afb091f57d.ctex"
+uid="uid://btmbkoxkuctem"
+path="res://.godot/imported/human_shadow.png-b2855be2af56fd5ede1fdd6d7b4a00dd.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/tilesets/field_wet.png"
-dest_files=["res://.godot/imported/field_wet.png-70d85fbfda05282b4cfe03afb091f57d.ctex"]
+source_file="res://assets/charecters/human_shadow.png"
+dest_files=["res://.godot/imported/human_shadow.png-b2855be2af56fd5ede1fdd6d7b4a00dd.ctex"]
 
 [params]
 
