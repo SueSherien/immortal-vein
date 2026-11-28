@@ -29,7 +29,6 @@ var farm_manager: FarmManager = null
 
 # ==================== 种植/高亮 ====================
 var is_seed_selected: bool = false
-var valid_target_cell: Vector2i = Vector2i()
 const HIGHLIGHT_SOURCE_ID: int = 0
 
 # ==================== 移动参数 ====================
@@ -142,16 +141,20 @@ func _create_highlight_texture(color: Color) -> Texture2D:
 	return ImageTexture.create_from_image(image)
 
 # ==================== 输入处理 ====================
-func _input(event):
+func _input(event: InputEvent) -> void:
 	if event.is_action_pressed("toggle_bag"):
 		toggle_bag()
 
 	if event is InputEventMouseButton and event.pressed and event.button_index == MOUSE_BUTTON_LEFT:
-		if is_seed_selected and valid_target_cell != Vector2i(-1, -1):
-			_try_plant(valid_target_cell)
+		if is_seed_selected and reference_layer:
+			# 按这次点击的位置选格，避免种到上一帧高亮的地块。
+			var mouse_local := reference_layer.make_canvas_position_local(event.position)
+			var target_grid := reference_layer.local_to_map(mouse_local)
+			if _is_in_planting_area(target_grid):
+				_try_plant(target_grid)
 
 	if event is InputEventMouseMotion:
-		_update_highlight()
+		_update_highlight(event)
 
 	if event is InputEventKey and event.pressed:
 		for i in range(10):
@@ -176,37 +179,31 @@ func _update_seed_selected_state():
 	is_seed_selected = item != null and item.plant_data != null
 
 	if not is_seed_selected:
-		valid_target_cell = Vector2i(-1, -1)
 		if highlight_layer:
 			highlight_layer.clear()
 	elif not was_selected:
 		_update_highlight()
 
-func _update_highlight():
-	if highlight_layer:
-		highlight_layer.clear()
-	valid_target_cell = Vector2i(-1, -1)
+func _update_highlight(event: InputEventMouseMotion = null) -> void:
+	if not highlight_layer:
+		return
+	highlight_layer.clear()
 
-	if not is_seed_selected or not reference_layer:
+	if not is_seed_selected or not reference_layer or not highlight_layer.tile_set:
 		return
 
-	var mouse_pos = get_global_mouse_position()
+	# 鼠标移动时用事件坐标，玩家移动时读取当前光标位置。
+	var mouse_local := reference_layer.get_local_mouse_position()
+	if event:
+		mouse_local = reference_layer.make_canvas_position_local(event.position)
+	var target_grid := reference_layer.local_to_map(mouse_local)
+	if _is_in_planting_area(target_grid) and highlight_layer.tile_set.has_source(HIGHLIGHT_SOURCE_ID):
+		highlight_layer.set_cell(target_grid, HIGHLIGHT_SOURCE_ID, Vector2i(0, 0))
 
-	# 等距坐标修正：作用在参考子层上
-	var target_grid: Vector2i
-	if reference_layer.tile_set:
-		var tile_size = reference_layer.tile_set.tile_size
-		var offset = Vector2(0, tile_size.y * 0.3)
-		target_grid = reference_layer.local_to_map(mouse_pos - offset)
-	else:
-		target_grid = reference_layer.local_to_map(mouse_pos)
-
-	var player_grid = reference_layer.local_to_map(global_position)
-
-	if farm_manager.is_plantable(target_grid) and farm_manager.is_within_range(player_grid, target_grid):
-		valid_target_cell = target_grid
-		if highlight_layer and highlight_layer.tile_set and highlight_layer.tile_set.get_source_count() > HIGHLIGHT_SOURCE_ID:
-			highlight_layer.set_cell(target_grid, HIGHLIGHT_SOURCE_ID, Vector2i(0, 0))
+func _is_in_planting_area(target_grid: Vector2i) -> bool:
+	# 用同一个瓦片层换算玩家和目标的格子坐标。
+	var player_grid := reference_layer.local_to_map(reference_layer.to_local(global_position))
+	return farm_manager.is_plantable(target_grid) and farm_manager.is_within_range(player_grid, target_grid)
 
 # ==================== 背包 ====================
 func toggle_bag():
@@ -238,7 +235,6 @@ func _try_plant(grid_pos: Vector2i):
 
 	if farm_manager.plant_crop(grid_pos, item.plant_data):
 		hot_bar_ui.hot_bar_inventory.use_item(hot_bar_ui.selected_index)
-		valid_target_cell = Vector2i(-1, -1)
 		if highlight_layer:
 			highlight_layer.clear()
 		_update_seed_selected_state()
