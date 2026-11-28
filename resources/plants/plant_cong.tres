@@ -13,4 +13,6 @@ script = ExtResource("1_u4iqd")
 growth_atlas = SubResource("AtlasTexture_0p7mp")
 harvest_type = 1
 harvest_item = ExtResource("2_nwjxg")
+; 大葱各阶段的根部都比贴图中心低 18 像素，向上移动后对齐地块中心。
+y_offset = -18
 metadata/_custom_type_script = "uid://b1x21e21p6j20"

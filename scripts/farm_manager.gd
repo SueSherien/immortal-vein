@@ -192,9 +192,6 @@ func _create_crop_node(grid_pos: Vector2i, plant_data: PlantData, stage: int) ->
 		push_error("farm_manager: 作物场景实例化失败")
 		return null
 
-	# 用参考层做坐标转换
-	instance.position = reference_layer.map_to_local(grid_pos)
-
 	var sprite = instance.get_node("Sprite") as Sprite2D
 	if not sprite:
 		for child in instance.get_children():
@@ -214,6 +211,9 @@ func _create_crop_node(grid_pos: Vector2i, plant_data: PlantData, stage: int) ->
 		crops_container.add_child(instance)
 	else:
 		get_tree().current_scene.add_child(instance)
+
+	# 作物和瓦片层的父节点不同，用全局坐标对齐地块中心。
+	instance.global_position = reference_layer.to_global(reference_layer.map_to_local(grid_pos))
 
 	return instance
 
